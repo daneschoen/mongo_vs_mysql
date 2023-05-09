@@ -1,0 +1,3 @@
+
+MONGO_DOC_MAX_SIZE = 4194304   # 4MB
+
