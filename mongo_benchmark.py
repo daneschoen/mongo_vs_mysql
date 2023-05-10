@@ -13,9 +13,6 @@ from db import MongoDBConnectionManager, mysql_conn
 from constants import *
 from decorators import timer
 
-sys.path.append('..')
-import windesco as we
-
 
 def setup(n):
     A = np.random.rand(n, n)
