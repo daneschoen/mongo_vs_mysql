@@ -6,16 +6,14 @@ import logging
 from bson.objectid import ObjectId
 from time import sleep
 
-from chainResp import IngestChain
-from pvcIngest import PvcIngest
-from dmpIngest import DmpIngest
-from defaultIngest import DefaultIngest
+from chain.chainResp import IngestChain
+from chain.pvcIngest import PvcIngest
+from chain.dmpIngest import DmpIngest
+from chain.defaultIngest import DefaultIngest
 
-from mongo_transformers import MetaIdInjector
-from app_global import *
+from chain.mongo_transformers import MetaIdInjector
 
 logging.basicConfig(level = logging.DEBUG)
-
 
 meta_id_injector = MetaIdInjector()
 conn = MongoClient()
